@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/sandordargo/dev-to-analytics.svg?branch=master)](https://travis-ci.com/sandordargo/dev-to-analytics)
+
 # Dev.to Analytics
 
 The purpose of this set of small scripts is to get some insights of your most popular articles and tags posted on [dev.to](https://dev.to/).
