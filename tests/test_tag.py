@@ -1,6 +1,6 @@
 import unittest
-from article import Article
-from tag import Tag
+from models.article import Article
+from models.tag import Tag
 
 
 class TestTagAnalytics(unittest.TestCase):

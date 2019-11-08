@@ -1,6 +1,6 @@
 import unittest
-from article import Article
-import article_analytics
+from models.article import Article
+from tools import article_analytics
 
 
 class TestArticleAnalytics(unittest.TestCase):

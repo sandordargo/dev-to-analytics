@@ -1,7 +1,7 @@
 import unittest
-from article import Article
-from tag import Tag
-import tag_analytics
+from models.article import Article
+from models.tag import Tag
+from tools import tag_analytics
 
 
 class TestTag(unittest.TestCase):
@@ -18,7 +18,7 @@ class TestTag(unittest.TestCase):
         self.assertEqual(self.mostViewedTag, tag_analytics.get_tag_with_most_views(self.tags))
 
     def test_get_tag_with_most_comments(self):
-        self.assertEqual(self.mostCommentedTag, tag_analytics.get_tags_with_most_comments(self.tags))
+        self.assertEqual(self.mostCommentedTag, tag_analytics.get_tag_with_most_comments(self.tags))
 
     def test_get_tag_with_most_reactions(self):
         self.assertEqual(self.mostReactedTag, tag_analytics.get_tag_with_most_reactions(self.tags))

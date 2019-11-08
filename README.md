@@ -16,12 +16,3 @@ Then the next steps are:
 All ideas and code contributions are welcome. Please respect the [PEP 8 guidelines](https://www.python.org/dev/peps/pep-0008/) and provide unit tests, otherwise I won't merge.
 
 For new ideas, feel free to open issues.
-
-# TODO
-
-* CI/CD
-* Format output
-* * print summary
-* * print tag analytics
-* * print article analytics
-* Show the numbers for tag analytics

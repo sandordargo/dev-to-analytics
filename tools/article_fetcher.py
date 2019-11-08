@@ -1,6 +1,6 @@
 import http.client
 import json
-import article
+from models import article
 
 
 def get_articles_from_dev(api_key):
