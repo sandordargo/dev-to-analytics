@@ -10,7 +10,7 @@ Then the next steps are:
 * Go your [account settings](https://dev.to/settings/account) and generate a new API key. The description doesn't really matter, but DevToAnalytics should be just fine.
 * Copy the just generated active API Key
 * Clone this project
-* Run `analyzer.py --api-key <YOUR API KEY>`
+* Run `python analyzer.py --api-key <YOUR API KEY>`
 * Read the output and get some insights
 
 # Contribution
