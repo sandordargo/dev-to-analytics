@@ -1,10 +1,10 @@
 import http.client
 import json
 from models import article
-
+import ssl
 
 def get_articles_from_dev(api_key):
-    connection = http.client.HTTPSConnection("dev.to")
+    connection = http.client.HTTPSConnection("dev.to", context=ssl._create_unverified_context())
     articles = []
 
     current_page = 1
