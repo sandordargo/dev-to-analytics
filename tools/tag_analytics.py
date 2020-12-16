@@ -26,10 +26,10 @@ def analyze(tags):
     print("Your most viewed tag is: {} ({} views)".format(get_tag_with_most_views(tags).name,
                                                           get_tag_with_most_views(tags).views))
     print("Your tag with the most reactions is: {} ({} reactions)".format(
-        get_tag_with_most_comments(tags).name,
+        get_tag_with_most_reactions(tags).name,
         get_tag_with_most_reactions(tags).reactions))
     print(
-        "Your tag with most comments is: {} ({} comments)".format(get_tag_with_most_reactions(tags).name,
+        "Your tag with most comments is: {} ({} comments)".format(get_tag_with_most_comments(tags).name,
                                                                   get_tag_with_most_comments(
                                                                       tags).comments))
     print("")
