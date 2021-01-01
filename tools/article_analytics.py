@@ -6,6 +6,20 @@ def analyse(articles):
     print("Number of reactions received: {}".format(get_total_reactions(articles)))
     print("Number of comments received: {}".format(get_total_comments(articles)))
     print("")
+    print("Top 5 most viewed articles:")
+    for article in get_top_n_views(articles, 5):
+        print(f"Title: {article.title}, views: {article.views}, reactions: {article.reactions}, comments: {article.comments}")
+    print("")
+    print("Top 5 most reacted articles:")
+    for article in get_top_n_reactions(articles, 5):
+        print(
+            f"Title: {article.title}, views: {article.views}, reactions: {article.reactions}, comments: {article.comments}")
+    print("")
+    print("Top 5 most commented articles:")
+    for article in get_top_n_comments(articles, 5):
+        print(
+            f"Title: {article.title}, views: {article.views}, reactions: {article.reactions}, comments: {article.comments}")
+    print("")
     print("Percentage of all views of your most viewed article: {:.2f}%".format(
         get_part_of_most_viewed_article_out_of_total_views(articles) * 100))
     print("Percentage of all reactions of your article with most reactions: {:.2f}%".format(
