@@ -27,7 +27,7 @@ def extract_articles_from_json(json_data):
 
 
 def get_json_data_from_page(connecion, page_index, api_key):
-    connecion.request("GET", "/api/articles/me?page={}".format(page_index), headers={"api-key": api_key}, )
+    connecion.request("GET", "/api/articles/me?page={}".format(page_index), headers={"api-key": api_key, "User-Agent": "dev-to-analytics"}, )
     response = connecion.getresponse()
     if response.code != 200: # not OK
         print("Response code: {}".format(response.code))
